@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://grdk6f2lsktc"]
 
-[ext_resource type="Script" uid="uid://dkc1vxuwfjo4s" path="res://player.gd" id="1_wtcfe"]
+[ext_resource type="Script" uid="uid://c2qbqq2d0bdl2" path="res://Scene.gd" id="1_wtcfe"]
 
 [sub_resource type="Gradient" id="Gradient_wtcfe"]
 colors = PackedColorArray(0, 0.9529412, 0, 1, 2.8397144e-06, 0.9582109, 0.0047495426, 1)
@@ -8,46 +8,36 @@ colors = PackedColorArray(0, 0.9529412, 0, 1, 2.8397144e-06, 0.9582109, 0.004749
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_8vrlf"]
 gradient = SubResource("Gradient_wtcfe")
 
-[sub_resource type="Gradient" id="Gradient_0e48y"]
-colors = PackedColorArray(0.7547612, 0.38893694, 0.22891694, 1, 0.7508243, 0.1166809, 0.587282, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_v5gy4"]
-gradient = SubResource("Gradient_0e48y")
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
-size = Vector2(96, 1235.25)
+size = Vector2(96, 827.625)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8vrlf"]
-size = Vector2(1519, 102)
+size = Vector2(1211.25, 102)
 
 [node name="Node2D" type="Node2D" unique_id=2060549158]
+script = ExtResource("1_wtcfe")
 
 [node name="grass" type="Sprite2D" parent="." unique_id=1995031175]
-position = Vector2(791, 624)
-scale = Vector2(-24.459272, 19.468805)
+position = Vector2(576.0176, 420.00208)
+scale = Vector2(-17.741072, 13.09387)
 texture = SubResource("GradientTexture2D_8vrlf")
-
-[node name="Player" type="Sprite2D" parent="." unique_id=1749131816]
-position = Vector2(215, 157)
-texture = SubResource("GradientTexture2D_v5gy4")
-script = ExtResource("1_wtcfe")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=2033606800]
 collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=446286866]
-position = Vector2(1538, 623)
+position = Vector2(1165, 419)
 shape = SubResource("RectangleShape2D_1vivr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=299099143]
-position = Vector2(38, 610.375)
+position = Vector2(-15, 419)
 shape = SubResource("RectangleShape2D_1vivr")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D" unique_id=14908627]
-position = Vector2(769.5, -41)
+position = Vector2(603, -16)
 shape = SubResource("RectangleShape2D_8vrlf")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Area2D" unique_id=1731582913]
-position = Vector2(781, 1199)
+position = Vector2(586, 864)
 shape = SubResource("RectangleShape2D_8vrlf")

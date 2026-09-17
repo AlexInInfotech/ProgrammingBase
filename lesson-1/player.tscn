@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bjge4487bg1t"]
+
+[ext_resource type="Script" uid="uid://dkc1vxuwfjo4s" path="res://player.gd" id="1_4flbx"]
+
+[sub_resource type="Gradient" id="Gradient_4flbx"]
+colors = PackedColorArray(0.5471859, 0.4067007, 0.16312146, 1, 0.9492517, 0.4686383, 0.29161412, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_wtcfe"]
+gradient = SubResource("Gradient_4flbx")
+
+[node name="Player" type="Sprite2D" unique_id=247934071]
+texture = SubResource("GradientTexture2D_wtcfe")
+script = ExtResource("1_4flbx")
