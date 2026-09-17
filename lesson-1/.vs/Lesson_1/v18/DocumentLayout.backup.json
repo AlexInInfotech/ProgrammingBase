@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\ProgrammingBase\\lesson-1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B03928FB-9508-4607-97FE-4408460D1B74}|Lesson_1.csproj|c:\\programmingbase\\lesson-1\\sprite2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B03928FB-9508-4607-97FE-4408460D1B74}|Lesson_1.csproj|solutionrelative:sprite2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Sprite2d.cs",
+              "DocumentMoniker": "C:\\ProgrammingBase\\lesson-1\\Sprite2d.cs",
+              "RelativeDocumentMoniker": "Sprite2d.cs",
+              "ToolTip": "C:\\ProgrammingBase\\lesson-1\\Sprite2d.cs",
+              "RelativeToolTip": "Sprite2d.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T09:13:43.928Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

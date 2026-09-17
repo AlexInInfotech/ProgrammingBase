@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://drbxs0hj0qv0o"]
+
+[ext_resource type="Script" uid="uid://yeiu1tq0sf5w" path="res://bullet.gd" id="1_v7oki"]
+
+[sub_resource type="Gradient" id="Gradient_v7oki"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_1vivr"]
+gradient = SubResource("Gradient_v7oki")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
+size = Vector2(71.55276, 70.32974)
+
+[node name="Bullet" type="Sprite2D" unique_id=823423452]
+position = Vector2(9.5, -10.5)
+scale = Vector2(0.5031253, 0.51187456)
+texture = SubResource("GradientTexture2D_1vivr")
+script = ExtResource("1_v7oki")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2058120585]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=594389030]
+position = Vector2(-0.9937897, -2.9304008)
+shape = SubResource("RectangleShape2D_1vivr")
+debug_color = Color(0.5127918, 0.4288894, 0.98517567, 0.41960785)
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
