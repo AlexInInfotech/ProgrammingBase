@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://ctr6k6t48uopt"]
+
+[ext_resource type="Texture2D" uid="uid://l0l1qycqw73x" path="res://Vector 266.png" id="1_i3y2h"]
+[ext_resource type="Script" uid="uid://bpk2swdvpycnp" path="res://hillka.gd" id="2_2smxk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
+size = Vector2(92, 98)
+
+[node name="Hillka" type="Sprite2D" unique_id=1104573906]
+texture = ExtResource("1_i3y2h")
+script = ExtResource("2_2smxk")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1877170673]
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1068205260]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_1vivr")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

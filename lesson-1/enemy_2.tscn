@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bdjb3vgt4k727"]
+
+[ext_resource type="Script" uid="uid://cgu8xd0lrhpxb" path="res://enemy_2.gd" id="1_867ty"]
+[ext_resource type="Texture2D" uid="uid://2ec5q13clbkn" path="res://image 35 (1).png" id="1_vfv5t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
+size = Vector2(1418.6208, 886.65955)
+
+[node name="Enemy_2" type="Sprite2D" unique_id=703274910]
+position = Vector2(2.249999, 6)
+scale = Vector2(0.08529412, 0.098121084)
+texture = ExtResource("1_vfv5t")
+script = ExtResource("1_867ty")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=597534673]
+collision_layer = 6
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1805809094]
+position = Vector2(-8.793091, -25.478699)
+shape = SubResource("RectangleShape2D_1vivr")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

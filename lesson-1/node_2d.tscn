@@ -1,12 +1,9 @@
 [gd_scene format=3 uid="uid://grdk6f2lsktc"]
 
 [ext_resource type="Script" uid="uid://c2qbqq2d0bdl2" path="res://Scene.gd" id="1_wtcfe"]
-
-[sub_resource type="Gradient" id="Gradient_wtcfe"]
-colors = PackedColorArray(0, 0.9529412, 0, 1, 2.8397144e-06, 0.9582109, 0.0047495426, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_8vrlf"]
-gradient = SubResource("Gradient_wtcfe")
+[ext_resource type="Texture2D" uid="uid://b7qqvu0w3fkle" path="res://image 32.png" id="2_0e48y"]
+[ext_resource type="PackedScene" uid="uid://ctr6k6t48uopt" path="res://hillka.tscn" id="3_epypp"]
+[ext_resource type="PackedScene" uid="uid://6qjtuo4pw1am" path="res://spike.tscn" id="4_0hol4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
 size = Vector2(96, 827.625)
@@ -18,13 +15,13 @@ size = Vector2(1211.25, 102)
 script = ExtResource("1_wtcfe")
 
 [node name="grass" type="Sprite2D" parent="." unique_id=1995031175]
-position = Vector2(576.0176, 420.00208)
-scale = Vector2(-17.741072, 13.09387)
-texture = SubResource("GradientTexture2D_8vrlf")
+position = Vector2(622.6465, 418.56958)
+scale = Vector2(-1.648209, 1.7488222)
+texture = ExtResource("2_0e48y")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=2033606800]
-collision_layer = 2
-collision_mask = 2
+collision_layer = 3
+collision_mask = 3
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=446286866]
 position = Vector2(1165, 419)
@@ -39,5 +36,31 @@ position = Vector2(603, -16)
 shape = SubResource("RectangleShape2D_8vrlf")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Area2D" unique_id=1731582913]
-position = Vector2(586, 864)
+position = Vector2(588, 716)
 shape = SubResource("RectangleShape2D_8vrlf")
+
+[node name="Hillka" parent="." unique_id=1104573906 instance=ExtResource("3_epypp")]
+position = Vector2(187, 612.00006)
+scale = Vector2(0.7201835, 0.6864407)
+
+[node name="Hillka5" parent="." unique_id=921385796 instance=ExtResource("3_epypp")]
+position = Vector2(88, 90.00006)
+scale = Vector2(0.7201835, 0.6864407)
+
+[node name="Hillka2" parent="." unique_id=2060179706 instance=ExtResource("3_epypp")]
+position = Vector2(1059, 145)
+scale = Vector2(0.7201835, 0.6864407)
+
+[node name="Hillka4" parent="." unique_id=2093786688 instance=ExtResource("3_epypp")]
+position = Vector2(1088, 610)
+scale = Vector2(0.7201835, 0.6864407)
+
+[node name="spike" parent="." unique_id=1463537973 instance=ExtResource("4_0hol4")]
+position = Vector2(919, 595)
+
+[node name="spike2" parent="." unique_id=1715252424 instance=ExtResource("4_0hol4")]
+position = Vector2(83, 597)
+
+[node name="spike3" parent="." unique_id=463078819 instance=ExtResource("4_0hol4")]
+position = Vector2(198, 183)
+scale = Vector2(0.6636364, 0.50869566)

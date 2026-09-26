@@ -1,16 +1,30 @@
 class_name Player extends Sprite2D
 
-var walking_speed : int = 150
+@export var walking_speed : int = 150
 const COOLDOWN_IT_SECONDS : float = 0.2 
 const BULLET =preload("uid://drbxs0hj0qv0o")
 @export var parent_scene : NodePath
+@export var max_health: int = 500
+var current_health: int 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	current_health = max_health
 	pass
+func hill(amount: int) -> void:
+	current_health += amount
+	if current_health > max_health:
+		current_health = max_health
+func take_damage(amount: int) -> void:
+	current_health -= amount
+	if current_health <= 0:
+		die()
+
+func die() -> void:
+	get_tree().quit()
+	queue_free() 
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if Input.is_action_pressed("move_up"):
 		position.y -= walking_speed * delta
@@ -36,3 +50,4 @@ func shoot_bullet() -> void:
 	bullet_instance.rotation = rotation
 	add_sibling(bullet_instance)
 	bullet_instance.position = position
+	bullet_instance.setup_target_layers(2)
