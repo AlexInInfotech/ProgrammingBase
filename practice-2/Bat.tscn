@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://u3msu7ihbo2c"]
+
+[ext_resource type="Script" uid="uid://buwrevn6uvd0f" path="res://Bat.cs" id="1_17c4q"]
+[ext_resource type="Texture2D" uid="uid://d306ltljj6ssl" path="res://Bat_sprite.png" id="2_r6jf1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
+size = Vector2(46, 76)
+
+[node name="bat" type="Area2D" unique_id=1541585252]
+collision_layer = 3
+script = ExtResource("1_17c4q")
+health = 30
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1172257045]
+position = Vector2(-4.7683716e-07, 2.000001)
+scale = Vector2(0.42187497, 0.36843103)
+texture = ExtResource("2_r6jf1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1269139879]
+position = Vector2(-7, 24)
+shape = SubResource("RectangleShape2D_1vivr")
+
+[connection signal="body_entered" from="." to="." method="OnBodyEntered"]

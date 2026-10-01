@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://blvlrhfl32qma"]
+
+[ext_resource type="Script" uid="uid://bdgoblt775lly" path="res://Rock.cs" id="1_68h2w"]
+[ext_resource type="Texture2D" uid="uid://cwpepqmygvypo" path="res://13022023_kamen1-2.png" id="1_o0qsl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2bq3f"]
+size = Vector2(48, 74)
+
+[node name="Rock" type="Area2D" unique_id=678445244]
+script = ExtResource("1_68h2w")
+Speed = 200.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1506207637]
+position = Vector2(10.499997, -11.250002)
+scale = Vector2(0.244, 0.51358694)
+texture = ExtResource("1_o0qsl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2102300272]
+position = Vector2(10, -15)
+shape = SubResource("RectangleShape2D_2bq3f")

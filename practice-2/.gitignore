@@ -1,0 +1,25 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+# Локальные настройки редактора и история
+.godot/
+.import/
+export_presets.cfg
+
+# Результаты сборки и экспорта (если вы экспортируете в корень проекта)
+*.html
+*.html.readme
+*.js
+*.wasm
+*.pck
+*.apk
+*.aar
+*.aab
+*.exe
+*.dll
+*.so
+*.dylib
+*.app
+
+# Логи и временные файлы
+*.log

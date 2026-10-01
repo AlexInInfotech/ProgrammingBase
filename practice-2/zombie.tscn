@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://br7p44ffqkmpu"]
+
+[ext_resource type="Script" uid="uid://dqli6ii8e6ysr" path="res://Zombie.cs" id="1_uiaus"]
+[ext_resource type="Texture2D" uid="uid://clsrja65k315r" path="res://Zombie_sprite.png" id="2_roy8y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
+size = Vector2(72, 224)
+
+[node name="Zombie" type="Area2D" unique_id=1143838839]
+collision_layer = 3
+script = ExtResource("1_uiaus")
+metadata/_edit_horizontal_guides_ = [-40.0]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=480712534]
+position = Vector2(7.1249933, -17.472902)
+scale = Vector2(4.1339283, 4.674576)
+texture = ExtResource("2_roy8y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1477836220]
+position = Vector2(5, -16)
+shape = SubResource("RectangleShape2D_1vivr")
+
+[connection signal="body_entered" from="." to="." method="OnBodyEntered"]

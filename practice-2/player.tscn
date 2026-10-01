@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://cybhspd0i4vus"]
+
+[ext_resource type="Script" uid="uid://nml37r1uc84r" path="res://Player.cs" id="1_4flbx"]
+[ext_resource type="PackedScene" uid="uid://1unp6vsu8qh8" path="res://bullet.tscn" id="2_onrkg"]
+
+[sub_resource type="Gradient" id="Gradient_4flbx"]
+offsets = PackedFloat32Array(0.06626506, 0.5301205, 0.7108434)
+colors = PackedColorArray(0.9270848, 0, 0.013732666, 1, 0.2200841, 0.38025755, 1, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_8vrlf"]
+gradient = SubResource("Gradient_4flbx")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wtcfe"]
+size = Vector2(64, 64.68086)
+
+[node name="Player" type="CharacterBody2D" unique_id=306117249]
+position = Vector2(12.5, 15)
+scale = Vector2(3.5628896, 4.423773)
+script = ExtResource("1_4flbx")
+JumpForce = 240.0
+CustomGravity = null
+BulletScene = ExtResource("2_onrkg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=75077289]
+texture = SubResource("GradientTexture2D_8vrlf")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1167566665]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1182053530]
+position = Vector2(0, -0.3404255)
+shape = SubResource("RectangleShape2D_wtcfe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1971298938]
+position = Vector2(0, -0.680851)
+shape = SubResource("RectangleShape2D_wtcfe")
