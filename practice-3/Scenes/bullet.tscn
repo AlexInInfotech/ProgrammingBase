@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://c1daldq1iauu"]
+
+[ext_resource type="Script" uid="uid://bah0p67kep600" path="res://Scripts/Bullet.cs" id="1_xjght"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_4mw4s"]
+radius = 0.28566527
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xjght"]
+albedo_color = Color(0.63928634, 0.09632703, 0.28788605, 1)
+emission_enabled = true
+emission = Color(0.14544994, 0.3098029, 0.30057672, 1)
+emission_energy_multiplier = 9.48
+
+[sub_resource type="SphereMesh" id="SphereMesh_1vivr"]
+material = SubResource("StandardMaterial3D_xjght")
+
+[node name="Bullet" type="Area3D" unique_id=511702407]
+collision_mask = 2
+script = ExtResource("1_xjght")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1469776116]
+shape = SubResource("SphereShape3D_4mw4s")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1884866319]
+transform = Transform3D(0.51902205, 0, 0, 0, 0.51902205, 0, 0, 0, 0.51902205, 0, 0, 0)
+mesh = SubResource("SphereMesh_1vivr")
+
+[connection signal="body_entered" from="." to="." method="OnBulletBodyEntered"]

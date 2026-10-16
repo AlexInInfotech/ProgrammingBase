@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dgd4vur82j6g7"]
+
+[ext_resource type="Script" uid="uid://dhcf2ort3ds7o" path="res://Scripts/Dog.cs" id="1_c5eso"]
+[ext_resource type="Texture2D" uid="uid://clw7vqpgev5r5" path="res://Sprites/dog.png" id="2_uny1q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c5eso"]
+size = Vector2(49, 123)
+
+[node name="Dog" type="Area2D" unique_id=1196043716]
+collision_layer = 2
+script = ExtResource("1_c5eso")
+damage = 10
+relativeSpeed = null
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1096063937]
+position = Vector2(2.999998, -30)
+scale = Vector2(0.10509258, 0.12268516)
+texture = ExtResource("2_uny1q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1097898133]
+position = Vector2(-14.5, -29.5)
+shape = SubResource("RectangleShape2D_c5eso")

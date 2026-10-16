@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://br7p44ffqkmpu"]
 
-[ext_resource type="Script" uid="uid://dqli6ii8e6ysr" path="res://Zombie.cs" id="1_uiaus"]
-[ext_resource type="Texture2D" uid="uid://clsrja65k315r" path="res://Zombie_sprite.png" id="2_roy8y"]
+[ext_resource type="Script" uid="uid://dqli6ii8e6ysr" path="res://Scripts/Zombie.cs" id="1_uiaus"]
+[ext_resource type="Texture2D" uid="uid://clsrja65k315r" path="res://Sprites/Zombie_sprite.png" id="2_roy8y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
 size = Vector2(72, 224)
@@ -9,6 +9,8 @@ size = Vector2(72, 224)
 [node name="Zombie" type="Area2D" unique_id=1143838839]
 collision_layer = 3
 script = ExtResource("1_uiaus")
+speedOfJerk = 120.0
+visibilityRadius = 400.0
 metadata/_edit_horizontal_guides_ = [-40.0]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=480712534]

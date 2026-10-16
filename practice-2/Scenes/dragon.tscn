@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://cdauxbj3d5bnt"]
+
+[ext_resource type="Script" uid="uid://dojkoe65vlhi0" path="res://Scripts/Dragon.cs" id="1_ixu8j"]
+[ext_resource type="PackedScene" uid="uid://yucbx8ya2ruk" path="res://Scenes/dragon_fire.tscn" id="2_n6spy"]
+[ext_resource type="Texture2D" uid="uid://b66gy7ysvmjfs" path="res://Sprites/drakon-6-0.png" id="3_d8ryr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ixu8j"]
+size = Vector2(81, 125)
+
+[node name="Dragon" type="Area2D" unique_id=783709716]
+collision_layer = 2
+script = ExtResource("1_ixu8j")
+fireDelay = 1.2
+fireScene = ExtResource("2_n6spy")
+health = 30
+damage = 20
+relativeSpeed = null
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=213740038]
+position = Vector2(38, 55)
+scale = Vector2(0.23866664, 0.30318263)
+texture = ExtResource("3_d8ryr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=882625615]
+position = Vector2(13.5, 32.5)
+shape = SubResource("RectangleShape2D_ixu8j")

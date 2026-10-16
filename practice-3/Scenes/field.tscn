@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://ualcank21dsv"]
+
+[ext_resource type="PackedScene" uid="uid://7neanubrmvlo" path="res://Scenes/enemy.tscn" id="1_s2mji"]
+[ext_resource type="PackedScene" uid="uid://cj34q2fi3sowh" path="res://Scenes/tower.tscn" id="2_bbyqf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1vivr"]
+size = Vector3(2.003662, 0.001, 2.003662)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_0cutk"]
+
+[sub_resource type="Sky" id="Sky_8vrlf"]
+
+[sub_resource type="Environment" id="Environment_1vivr"]
+background_energy_multiplier = 3.9
+sky = SubResource("Sky_8vrlf")
+glow_enabled = true
+
+[node name="Field" type="Node3D" unique_id=775346684]
+
+[node name="Floor" type="Node3D" parent="." unique_id=1903975550]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Floor" unique_id=1332170384]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor/StaticBody3D" unique_id=2080248356]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.020141602, 0.009021491, -0.008422852)
+shape = SubResource("BoxShape3D_1vivr")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor" unique_id=1107878830]
+transform = Transform3D(10.865475, 0, 0, 0, 1, 0, 0, 0, 9.429318, 0, 0, 0)
+mesh = SubResource("PlaneMesh_0cutk")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Floor" unique_id=1160089706]
+environment = SubResource("Environment_1vivr")
+
+[node name="Enemy" parent="." unique_id=128665153 instance=ExtResource("1_s2mji")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3146311, 1.0095215, 5.2297435)
+
+[node name="Enemy2" parent="." unique_id=1659584798 instance=ExtResource("1_s2mji")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.2283015, 1.0095215, 5.2297435)
+
+[node name="Enemy3" parent="." unique_id=1508952112 instance=ExtResource("1_s2mji")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.593464, 1.0095215, -4.624497)
+
+[node name="Enemy4" parent="." unique_id=15498685 instance=ExtResource("1_s2mji")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.1122913, 1.0095215, -4.624497)
+
+[node name="Tower" parent="." unique_id=165745984 instance=ExtResource("2_bbyqf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4353136, 0.95510626, -2.2958012)
+
+[node name="Tower2" parent="." unique_id=1537485913 instance=ExtResource("2_bbyqf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.6043534, 0.95510626, 3.829615)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1212084475]
+transform = Transform3D(0.9998456, -0.014177103, -0.010383507, 0.017064756, 0.64223903, 0.76631445, -0.0041954247, -0.7663733, 0.6423818, 0.9837519, 6.142194, 7.8413143)
+size = 10.652631

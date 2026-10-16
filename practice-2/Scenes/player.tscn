@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://cybhspd0i4vus"]
+
+[ext_resource type="Script" uid="uid://nml37r1uc84r" path="res://Scripts/Player.cs" id="1_4flbx"]
+[ext_resource type="PackedScene" uid="uid://1unp6vsu8qh8" path="res://Scenes/bullet.tscn" id="2_onrkg"]
+
+[sub_resource type="Gradient" id="Gradient_4flbx"]
+offsets = PackedFloat32Array(0.06626506, 0.5301205, 0.7108434)
+colors = PackedColorArray(0.9270848, 0, 0.013732666, 1, 0.2200841, 0.38025755, 1, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_8vrlf"]
+gradient = SubResource("Gradient_4flbx")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8vrlf"]
+size = Vector2(62.028305, 63.294384)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
+size = Vector2(61.466965, 63.74649)
+
+[node name="Player" type="CharacterBody2D" unique_id=306117249]
+position = Vector2(12.5, 15)
+scale = Vector2(3.5628896, 4.423773)
+script = ExtResource("1_4flbx")
+jumpForce = 230.0
+customGravity = null
+bulletScene = ExtResource("2_onrkg")
+health = 1
+speed = null
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=75077289]
+texture = SubResource("GradientTexture2D_8vrlf")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1167566665]
+light_mask = 2
+visibility_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1158208879]
+position = Vector2(-0.28066564, -0.45209932)
+scale = Vector2(1.0000002, 1.0000001)
+shape = SubResource("RectangleShape2D_8vrlf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1631677901]
+light_mask = 3
+visibility_layer = 3
+position = Vector2(0.2806754, -0.4521017)
+scale = Vector2(1.0000004, 1.0000001)
+shape = SubResource("RectangleShape2D_1vivr")

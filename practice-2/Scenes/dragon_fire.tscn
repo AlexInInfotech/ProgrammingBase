@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://yucbx8ya2ruk"]
+
+[ext_resource type="Texture2D" uid="uid://cavsxkhs7gfk7" path="res://Sprites/fire.png" id="1_v07ka"]
+[ext_resource type="Script" uid="uid://bnishgbthx01o" path="res://Scripts/DragonFire.cs" id="2_ny175"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1vivr"]
+radius = 125.36923
+
+[node name="DragonFire" type="Sprite2D" unique_id=941902023]
+light_mask = 2
+visibility_layer = 2
+position = Vector2(6.500004, -0.5000076)
+scale = Vector2(0.23131673, 0.27297294)
+texture = ExtResource("1_v07ka")
+script = ExtResource("2_ny175")
+damage = 200
+speed = 400
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1941261334]
+light_mask = 2
+visibility_layer = 2
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2115937068]
+light_mask = 2
+visibility_layer = 2
+position = Vector2(-2.1615548, 60.44558)
+shape = SubResource("CircleShape2D_1vivr")
+
+[connection signal="area_entered" from="Area2D" to="." method="onAreaEntered"]
