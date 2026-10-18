@@ -3,11 +3,12 @@
 [ext_resource type="Script" uid="uid://njosxmd2la08" path="res://Scripts/Field.cs" id="1_0hol4"]
 [ext_resource type="PackedScene" uid="uid://cybhspd0i4vus" path="res://Scenes/player.tscn" id="1_wtcfe"]
 [ext_resource type="PackedScene" uid="uid://u3msu7ihbo2c" path="res://Scenes/Bat.tscn" id="2_0e48y"]
-[ext_resource type="PackedScene" uid="uid://br7p44ffqkmpu" path="res://zombie.tscn" id="3_epypp"]
+[ext_resource type="PackedScene" uid="uid://br7p44ffqkmpu" path="res://Scenes/zombie.tscn" id="3_epypp"]
 [ext_resource type="PackedScene" uid="uid://cdauxbj3d5bnt" path="res://Scenes/dragon.tscn" id="5_d21ai"]
 [ext_resource type="PackedScene" uid="uid://blvlrhfl32qma" path="res://Scenes/rock.tscn" id="5_q6r6c"]
 [ext_resource type="PackedScene" uid="uid://dgd4vur82j6g7" path="res://Scenes/dog.tscn" id="6_d21ai"]
 [ext_resource type="PackedScene" uid="uid://bb77i5x2yqx18" path="res://Scenes/spike.tscn" id="7_rj586"]
+[ext_resource type="PackedScene" uid="uid://cvf11fm3jbjxc" path="res://Scenes/platform.tscn" id="8_chwn1"]
 
 [sub_resource type="Gradient" id="Gradient_0hol4"]
 offsets = PackedFloat32Array(0.012048192, 1)
@@ -31,7 +32,7 @@ size = Vector2(116, 563)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v5gy4"]
 size = Vector2(68, 562)
 
-[node name="Field" type="Node2D" unique_id=1505462447 node_paths=PackedStringArray("batTransform", "zombieTransform", "rockTransform", "dragonTransform", "dogTransform", "spikeTransform", "player")]
+[node name="Field" type="Node2D" unique_id=1505462447 node_paths=PackedStringArray("batTransform", "zombieTransform", "rockTransform", "dragonTransform", "dogTransform", "spikeTransform", "platformTransform", "player")]
 position = Vector2(583, 322.5)
 script = ExtResource("1_0hol4")
 batScene = ExtResource("2_0e48y")
@@ -40,13 +41,16 @@ rockScene = ExtResource("5_q6r6c")
 dragonScene = ExtResource("5_d21ai")
 dogScene = ExtResource("6_d21ai")
 spikeScene = ExtResource("7_rj586")
+platformScene = ExtResource("8_chwn1")
 batTransform = NodePath("BatSpawnPoint")
 zombieTransform = NodePath("ZombieSpawnPoint")
 rockTransform = NodePath("RockSpawnPoint")
 dragonTransform = NodePath("DragonSpawnPoint")
 dogTransform = NodePath("DogSpawnPoint")
 spikeTransform = NodePath("SpikeSpawnPoint")
+platformTransform = NodePath("PlatformSpawnPoint")
 player = NodePath("Player")
+platformDelay = 7.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1410357937]
 z_index = -4
@@ -57,19 +61,18 @@ texture = SubResource("GradientTexture2D_v5gy4")
 [node name="Player" parent="." unique_id=1385566356 instance=ExtResource("1_wtcfe")]
 light_mask = 3
 visibility_layer = 3
-position = Vector2(-472.00003, 76.500015)
-scale = Vector2(1.0246633, 3.5851145)
-collision_layer = 3
-collision_mask = 3
-jumpForce = 570.0
-customGravity = 1030.0
-speed = 170.0
+position = Vector2(-471, 84.500015)
+scale = Vector2(1.2459242, -1.6465018)
+collision_mask = 7
+jumpForce = 870.0
+customGravity = 1720.0
+speed = 230.0
 
 [node name="floor" type="StaticBody2D" parent="." unique_id=1192001989]
 light_mask = 3
 visibility_layer = 3
 z_index = 4
-collision_layer = 3
+collision_layer = 2
 collision_mask = 3
 
 [node name="ground" type="Sprite2D" parent="floor" unique_id=223133381]
@@ -95,17 +98,19 @@ position = Vector2(651, 213.5)
 position = Vector2(680, -54.5)
 
 [node name="DogSpawnPoint" type="RemoteTransform2D" parent="." unique_id=701349520]
-position = Vector2(671, 150.5)
+position = Vector2(671, 178.5)
 
 [node name="SpikeSpawnPoint" type="RemoteTransform2D" parent="." unique_id=560881760]
-position = Vector2(701, 194.5)
+position = Vector2(698, 213.5)
+
+[node name="PlatformSpawnPoint" type="RemoteTransform2D" parent="." unique_id=1633091809]
+position = Vector2(721, 9.5)
 
 [node name="Right wall" type="StaticBody2D" parent="." unique_id=957884760]
 collision_layer = 4
-collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Right wall" unique_id=2055493165]
-position = Vector2(611, -72.5)
+position = Vector2(600, -55.5)
 shape = SubResource("RectangleShape2D_8vrlf")
 
 [node name="Left_wall" type="StaticBody2D" parent="." unique_id=63496056]

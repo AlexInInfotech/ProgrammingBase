@@ -3,12 +3,52 @@
   "WorkspaceRootPath": "C:\\ProgrammingBase\\practice-2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|c:\\programmingbase\\practice-2\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|solutionrelative:scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|c:\\programmingbase\\practice-2\\scripts\\damagable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|solutionrelative:scripts\\damagable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ProgrammingBase\\practice-2\\Dog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Dog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ProgrammingBase\\practice-2\\Scenes\\Platform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scenes\\Platform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|c:\\programmingbase\\practice-2\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|solutionrelative:scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|c:\\programmingbase\\practice-2\\scripts\\damagindobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|solutionrelative:scripts\\damagindobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|c:\\programmingbase\\practice-2\\scripts\\movingobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|solutionrelative:scripts\\movingobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|c:\\programmingbase\\practice-2\\scripts\\field.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|solutionrelative:scripts\\field.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|c:\\programmingbase\\practice-2\\scripts\\dog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|solutionrelative:scripts\\dog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|c:\\programmingbase\\practice-2\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|solutionrelative:scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|c:\\programmingbase\\practice-2\\scripts\\bat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|solutionrelative:scripts\\bat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|c:\\programmingbase\\practice-2\\scripts\\spike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|solutionrelative:scripts\\spike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|c:\\programmingbase\\practice-2\\scripts\\rock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|solutionrelative:scripts\\rock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|c:\\programmingbase\\practice-2\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CCE1556-E6A1-4E64-BDB8-4FB85BB1A7A9}|practice_2.csproj|solutionrelative:scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +63,157 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Enemy.cs",
-              "DocumentMoniker": "C:\\ProgrammingBase\\practice-2\\Scripts\\Enemy.cs",
-              "RelativeDocumentMoniker": "Scripts\\Enemy.cs",
-              "ToolTip": "C:\\ProgrammingBase\\practice-2\\Scripts\\Enemy.cs",
-              "RelativeToolTip": "Scripts\\Enemy.cs",
+              "Title": "Damagable.cs",
+              "DocumentMoniker": "C:\\ProgrammingBase\\practice-2\\Scripts\\Damagable.cs",
+              "RelativeDocumentMoniker": "Scripts\\Damagable.cs",
+              "ToolTip": "C:\\ProgrammingBase\\practice-2\\Scripts\\Damagable.cs",
+              "RelativeToolTip": "Scripts\\Damagable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T11:46:08.715Z",
+              "WhenOpened": "2026-10-18T17:17:38.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Rock.cs",
+              "DocumentMoniker": "C:\\ProgrammingBase\\practice-2\\Scripts\\Rock.cs",
+              "RelativeDocumentMoniker": "Scripts\\Rock.cs",
+              "ToolTip": "C:\\ProgrammingBase\\practice-2\\Scripts\\Rock.cs",
+              "RelativeToolTip": "Scripts\\Rock.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T16:33:27.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Spike.cs",
+              "DocumentMoniker": "C:\\ProgrammingBase\\practice-2\\Scripts\\Spike.cs",
+              "RelativeDocumentMoniker": "Scripts\\Spike.cs",
+              "ToolTip": "C:\\ProgrammingBase\\practice-2\\Scripts\\Spike.cs",
+              "RelativeToolTip": "Scripts\\Spike.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T16:24:20.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Bat.cs",
+              "DocumentMoniker": "C:\\ProgrammingBase\\practice-2\\Scripts\\Bat.cs",
+              "RelativeDocumentMoniker": "Scripts\\Bat.cs",
+              "ToolTip": "C:\\ProgrammingBase\\practice-2\\Scripts\\Bat.cs",
+              "RelativeToolTip": "Scripts\\Bat.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA5wA0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T16:06:14.014Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Dog.cs",
-              "DocumentMoniker": "C:\\ProgrammingBase\\practice-2\\Dog.cs",
-              "RelativeDocumentMoniker": "Dog.cs",
-              "ToolTip": "C:\\ProgrammingBase\\practice-2\\Dog.cs",
-              "RelativeToolTip": "Dog.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAwwBQAAAAhAAAAAAAAAA==",
+              "Title": "Platform.cs",
+              "DocumentMoniker": "C:\\ProgrammingBase\\practice-2\\Scenes\\Platform.cs",
+              "RelativeDocumentMoniker": "Scenes\\Platform.cs",
+              "ToolTip": "C:\\ProgrammingBase\\practice-2\\Scenes\\Platform.cs",
+              "RelativeToolTip": "Scenes\\Platform.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T10:44:44.336Z",
+              "WhenOpened": "2026-10-18T16:04:19.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MovingObject.cs",
+              "DocumentMoniker": "C:\\ProgrammingBase\\practice-2\\Scripts\\MovingObject.cs",
+              "RelativeDocumentMoniker": "Scripts\\MovingObject.cs",
+              "ToolTip": "C:\\ProgrammingBase\\practice-2\\Scripts\\MovingObject.cs",
+              "RelativeToolTip": "Scripts\\MovingObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T15:58:38.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\ProgrammingBase\\practice-2\\Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Scripts\\Player.cs",
+              "ToolTip": "C:\\ProgrammingBase\\practice-2\\Scripts\\Player.cs",
+              "RelativeToolTip": "Scripts\\Player.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAmwBMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T15:56:08.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DamagindObject.cs",
+              "DocumentMoniker": "C:\\ProgrammingBase\\practice-2\\Scripts\\DamagindObject.cs",
+              "RelativeDocumentMoniker": "Scripts\\DamagindObject.cs",
+              "ToolTip": "C:\\ProgrammingBase\\practice-2\\Scripts\\DamagindObject.cs",
+              "RelativeToolTip": "Scripts\\DamagindObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T15:53:37.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Dog.cs",
+              "DocumentMoniker": "C:\\ProgrammingBase\\practice-2\\Scripts\\Dog.cs",
+              "RelativeDocumentMoniker": "Scripts\\Dog.cs",
+              "ToolTip": "C:\\ProgrammingBase\\practice-2\\Scripts\\Dog.cs",
+              "RelativeToolTip": "Scripts\\Dog.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T15:53:23.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Field.cs",
+              "DocumentMoniker": "C:\\ProgrammingBase\\practice-2\\Scripts\\Field.cs",
+              "RelativeDocumentMoniker": "Scripts\\Field.cs",
+              "ToolTip": "C:\\ProgrammingBase\\practice-2\\Scripts\\Field.cs",
+              "RelativeToolTip": "Scripts\\Field.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAwwDIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T15:51:05.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bullet.cs",
+              "DocumentMoniker": "C:\\ProgrammingBase\\practice-2\\Scripts\\Bullet.cs",
+              "RelativeDocumentMoniker": "Scripts\\Bullet.cs",
+              "ToolTip": "C:\\ProgrammingBase\\practice-2\\Scripts\\Bullet.cs",
+              "RelativeToolTip": "Scripts\\Bullet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T15:42:53.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\ProgrammingBase\\practice-2\\Scripts\\Enemy.cs",
+              "RelativeDocumentMoniker": "Scripts\\Enemy.cs",
+              "ToolTip": "C:\\ProgrammingBase\\practice-2\\Scripts\\Enemy.cs",
+              "RelativeToolTip": "Scripts\\Enemy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T11:46:08.715Z",
               "EditorCaption": ""
             }
           ]

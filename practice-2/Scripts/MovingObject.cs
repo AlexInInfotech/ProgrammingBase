@@ -11,4 +11,8 @@ public partial class MovingObject : Area2D
         Position += Vector2.Left * (baseSpeed + relativeSpeed)* (float)delta;
         
     }
+    public virtual Vector2 GetSpawnPosition()
+    {
+        return Vector2.Zero;
+    }
 }

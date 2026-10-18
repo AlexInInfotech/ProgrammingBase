@@ -11,8 +11,9 @@ public partial class DamagingObject : MovingObject
     }
 
    
-    private void OnBodyEntered(Node2D body)  //обраблотка коллизии с игроком
+    private void OnBodyEntered(Node2D body)  //обраблотка коллизии с игроком и границами
     {
+        GD.Print(body.Name);
         if (body.Name == LEFTWALL)
             QueueFree();
         if (body is Player player)

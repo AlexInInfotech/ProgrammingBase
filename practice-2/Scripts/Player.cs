@@ -17,7 +17,7 @@ public partial class Player : CharacterBody2D, Damagable
     {
         health -= damage;
         if (health <= 0)
-            QueueFree();
+            GetTree().Quit();
     }
     private void CreateBullet()     //инициализация пули
     {

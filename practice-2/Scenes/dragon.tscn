@@ -13,7 +13,7 @@ script = ExtResource("1_ixu8j")
 fireDelay = 1.2
 fireScene = ExtResource("2_n6spy")
 health = 30
-damage = 20
+damage = null
 relativeSpeed = null
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=213740038]

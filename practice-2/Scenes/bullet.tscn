@@ -19,7 +19,7 @@ speed = 600
 
 [node name="Area2D" type="Area2D" parent="." unique_id=194666359]
 collision_layer = 2
-collision_mask = 2
+collision_mask = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=594196702]
 position = Vector2(-5.6470656, -2.9090908)
@@ -27,3 +27,4 @@ scale = Vector2(0.99999976, 0.99999976)
 shape = SubResource("RectangleShape2D_1vivr")
 
 [connection signal="area_entered" from="Area2D" to="." method="onAreaEntered"]
+[connection signal="body_entered" from="Area2D" to="." method="onBodyEntered"]

@@ -7,7 +7,6 @@
 size = Vector2(76, 78)
 
 [node name="spike" type="Area2D" unique_id=1570958129]
-z_index = -1
 script = ExtResource("1_8ryga")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=957816855]

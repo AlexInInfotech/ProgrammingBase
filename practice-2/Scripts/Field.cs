@@ -10,15 +10,19 @@ public partial class Field : Node2D
     [Export] public PackedScene dragonScene;
     [Export] public PackedScene dogScene;
     [Export] public PackedScene spikeScene;
+    [Export] public PackedScene platformScene;
     [Export] public RemoteTransform2D batTransform;
     [Export] public RemoteTransform2D zombieTransform;
     [Export] public RemoteTransform2D rockTransform;
     [Export] public RemoteTransform2D dragonTransform;
     [Export] public RemoteTransform2D dogTransform;
     [Export] public RemoteTransform2D spikeTransform;
+    [Export] public RemoteTransform2D platformTransform;
     [Export] public Node2D player;
     [Export] public float delay = 3f;
+    [Export] public float platformDelay = 4;
     private float _currentTime = 0;
+    private float _platformTime = 0;
     public override void _Ready() //инициализация spawnpoint для каждого объекта
     {
         MovingObject.baseSpeed = baseSpeed;
@@ -28,14 +32,23 @@ public partial class Field : Node2D
         Dragon.spawnPoint = dragonTransform.Transform;
         Dog.spawnPoint = dogTransform.Transform;
         Spike.spawnPoint = spikeTransform.Transform;
+        Platform.spawnPoint = platformTransform.Transform;
     }
     public override void _Process(double delta) //инициализация рандомного предмета с определенной задержкой
     {
         _currentTime -= (float)delta;
+        _platformTime -= (float)delta;
+        if (_platformTime < 0)
+        {
+            _platformTime = platformDelay;
+            Platform platform = platformScene.Instantiate<Platform>();
+            platform.Position = platform.GetSpawnPosition();
+            GetTree().CurrentScene.AddChild(platform);
+        }
         if (_currentTime < 0)
         {
             _currentTime = delay;
-            switch (GD.RandRange(1, 6))
+            switch (GD.RandRange(1,  6))
             {
                 case 1:
                     Bat bat = batScene.Instantiate<Bat>();

@@ -11,22 +11,22 @@ colors = PackedColorArray(0.9270848, 0, 0.013732666, 1, 0.2200841, 0.38025755, 1
 gradient = SubResource("Gradient_4flbx")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8vrlf"]
-size = Vector2(62.028305, 63.294384)
+size = Vector2(62.028305, 51.99182)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
-size = Vector2(61.466965, 63.74649)
+size = Vector2(61.466965, 52.44392)
 
 [node name="Player" type="CharacterBody2D" unique_id=306117249]
 position = Vector2(12.5, 15)
 scale = Vector2(3.5628896, 4.423773)
 script = ExtResource("1_4flbx")
 jumpForce = 230.0
-customGravity = null
 bulletScene = ExtResource("2_onrkg")
 health = 1
-speed = null
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=75077289]
+position = Vector2(0, 5.714661)
+scale = Vector2(1, 0.82141685)
 texture = SubResource("GradientTexture2D_8vrlf")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1167566665]
@@ -34,13 +34,13 @@ light_mask = 2
 visibility_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1158208879]
-position = Vector2(-0.28066564, -0.45209932)
-scale = Vector2(1.0000002, 1.0000001)
+position = Vector2(-0.28066564, 5.1991863)
+scale = Vector2(1.0000006, 1.0000001)
 shape = SubResource("RectangleShape2D_8vrlf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1631677901]
 light_mask = 3
 visibility_layer = 3
-position = Vector2(0.2806754, -0.4521017)
-scale = Vector2(1.0000004, 1.0000001)
+position = Vector2(0.2806754, 5.1991863)
+scale = Vector2(1.0000006, 1.0000001)
 shape = SubResource("RectangleShape2D_1vivr")
