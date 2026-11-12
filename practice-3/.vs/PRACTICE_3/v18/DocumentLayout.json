@@ -3,24 +3,64 @@
   "WorkspaceRootPath": "C:\\ProgrammingBase\\practice-3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ProgrammingBase\\practice-3\\Scripts\\Bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scripts\\Bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|c:\\programmingbase\\practice-3\\scripts\\build.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|solutionrelative:scripts\\build.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|c:\\programmingbase\\practice-3\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|solutionrelative:scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|c:\\programmingbase\\practice-3\\scripts\\damagingobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|solutionrelative:scripts\\damagingobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|c:\\programmingbase\\practice-3\\scripts\\dotcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|solutionrelative:scripts\\dotcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ProgrammingBase\\practice-3\\Scripts\\UIManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scripts\\UIManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|c:\\programmingbase\\practice-3\\scripts\\playermoving.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|solutionrelative:scripts\\playermoving.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ProgrammingBase\\practice-3\\Scripts\\MetallManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scripts\\MetallManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ProgrammingBase\\practice-3\\Scripts\\EnemyHealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scripts\\EnemyHealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|c:\\programmingbase\\practice-3\\scripts\\shootcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|solutionrelative:scripts\\shootcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|c:\\programmingbase\\practice-3\\scripts\\visibilitycomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|solutionrelative:scripts\\visibilitycomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|c:\\programmingbase\\practice-3\\scripts\\freezecomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|solutionrelative:scripts\\freezecomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|c:\\programmingbase\\practice-3\\scripts\\playershoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|solutionrelative:scripts\\playershoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|c:\\programmingbase\\practice-3\\scripts\\corehealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|solutionrelative:scripts\\corehealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|c:\\programmingbase\\practice-3\\scripts\\healthcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|solutionrelative:scripts\\healthcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ProgrammingBase\\practice-3\\Scripts\\MoveComponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scripts\\MoveComponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ProgrammingBase\\practice-3\\Scripts\\ShootComponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scripts\\ShootComponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|c:\\programmingbase\\practice-3\\scripts\\visibilitycomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|solutionrelative:scripts\\visibilitycomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|c:\\programmingbase\\practice-3\\scripts\\movecomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFA75CA9-AA87-458E-B37E-12DD5C6ADFD7}|Practice_3.csproj|solutionrelative:scripts\\movecomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,69 +70,199 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "C:\\ProgrammingBase\\practice-3\\Scripts\\UIManager.cs",
+              "RelativeDocumentMoniker": "Scripts\\UIManager.cs",
+              "ToolTip": "C:\\ProgrammingBase\\practice-3\\Scripts\\UIManager.cs",
+              "RelativeToolTip": "Scripts\\UIManager.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T10:23:44.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MetallManager.cs",
+              "DocumentMoniker": "C:\\ProgrammingBase\\practice-3\\Scripts\\MetallManager.cs",
+              "RelativeDocumentMoniker": "Scripts\\MetallManager.cs",
+              "ToolTip": "C:\\ProgrammingBase\\practice-3\\Scripts\\MetallManager.cs",
+              "RelativeToolTip": "Scripts\\MetallManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T09:24:29.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EnemyHealth.cs",
+              "DocumentMoniker": "C:\\ProgrammingBase\\practice-3\\Scripts\\EnemyHealth.cs",
+              "RelativeDocumentMoniker": "Scripts\\EnemyHealth.cs",
+              "ToolTip": "C:\\ProgrammingBase\\practice-3\\Scripts\\EnemyHealth.cs",
+              "RelativeToolTip": "Scripts\\EnemyHealth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T09:35:20.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Build.cs",
+              "DocumentMoniker": "C:\\ProgrammingBase\\practice-3\\Scripts\\Build.cs",
+              "RelativeDocumentMoniker": "Scripts\\Build.cs",
+              "ToolTip": "C:\\ProgrammingBase\\practice-3\\Scripts\\Build.cs",
+              "RelativeToolTip": "Scripts\\Build.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAkwD8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T11:27:33.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CoreHealth.cs",
+              "DocumentMoniker": "C:\\ProgrammingBase\\practice-3\\Scripts\\CoreHealth.cs",
+              "RelativeDocumentMoniker": "Scripts\\CoreHealth.cs",
+              "ToolTip": "C:\\ProgrammingBase\\practice-3\\Scripts\\CoreHealth.cs",
+              "RelativeToolTip": "Scripts\\CoreHealth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T11:20:15.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerMoving.cs",
+              "DocumentMoniker": "C:\\ProgrammingBase\\practice-3\\Scripts\\PlayerMoving.cs",
+              "RelativeDocumentMoniker": "Scripts\\PlayerMoving.cs",
+              "ToolTip": "C:\\ProgrammingBase\\practice-3\\Scripts\\PlayerMoving.cs",
+              "RelativeToolTip": "Scripts\\PlayerMoving.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T10:57:43.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PlayerShoot.cs",
+              "DocumentMoniker": "C:\\ProgrammingBase\\practice-3\\Scripts\\PlayerShoot.cs",
+              "RelativeDocumentMoniker": "Scripts\\PlayerShoot.cs",
+              "ToolTip": "C:\\ProgrammingBase\\practice-3\\Scripts\\PlayerShoot.cs",
+              "RelativeToolTip": "Scripts\\PlayerShoot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T10:51:36.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FreezeComponent.cs",
+              "DocumentMoniker": "C:\\ProgrammingBase\\practice-3\\Scripts\\FreezeComponent.cs",
+              "RelativeDocumentMoniker": "Scripts\\FreezeComponent.cs",
+              "ToolTip": "C:\\ProgrammingBase\\practice-3\\Scripts\\FreezeComponent.cs",
+              "RelativeToolTip": "Scripts\\FreezeComponent.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA9wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T17:59:21.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DoTComponent.cs",
+              "DocumentMoniker": "C:\\ProgrammingBase\\practice-3\\Scripts\\DoTComponent.cs",
+              "RelativeDocumentMoniker": "Scripts\\DoTComponent.cs",
+              "ToolTip": "C:\\ProgrammingBase\\practice-3\\Scripts\\DoTComponent.cs",
+              "RelativeToolTip": "Scripts\\DoTComponent.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAIwAsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T17:31:07.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DamagingObject.cs",
+              "DocumentMoniker": "C:\\ProgrammingBase\\practice-3\\Scripts\\DamagingObject.cs",
+              "RelativeDocumentMoniker": "Scripts\\DamagingObject.cs",
+              "ToolTip": "C:\\ProgrammingBase\\practice-3\\Scripts\\DamagingObject.cs",
+              "RelativeToolTip": "Scripts\\DamagingObject.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAkwCkAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T17:05:10.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Bullet.cs",
               "DocumentMoniker": "C:\\ProgrammingBase\\practice-3\\Scripts\\Bullet.cs",
               "RelativeDocumentMoniker": "Scripts\\Bullet.cs",
               "ToolTip": "C:\\ProgrammingBase\\practice-3\\Scripts\\Bullet.cs",
               "RelativeToolTip": "Scripts\\Bullet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-16T18:53:10.798Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "VisibilityComponent.cs",
               "DocumentMoniker": "C:\\ProgrammingBase\\practice-3\\Scripts\\VisibilityComponent.cs",
               "RelativeDocumentMoniker": "Scripts\\VisibilityComponent.cs",
               "ToolTip": "C:\\ProgrammingBase\\practice-3\\Scripts\\VisibilityComponent.cs",
               "RelativeToolTip": "Scripts\\VisibilityComponent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAIAwwCwAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-16T18:44:11.159Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "ShootComponent.cs",
               "DocumentMoniker": "C:\\ProgrammingBase\\practice-3\\Scripts\\ShootComponent.cs",
               "RelativeDocumentMoniker": "Scripts\\ShootComponent.cs",
               "ToolTip": "C:\\ProgrammingBase\\practice-3\\Scripts\\ShootComponent.cs",
               "RelativeToolTip": "Scripts\\ShootComponent.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAmwBIAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-16T18:44:02.937Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 14,
               "Title": "MoveComponent.cs",
               "DocumentMoniker": "C:\\ProgrammingBase\\practice-3\\Scripts\\MoveComponent.cs",
               "RelativeDocumentMoniker": "Scripts\\MoveComponent.cs",
               "ToolTip": "C:\\ProgrammingBase\\practice-3\\Scripts\\MoveComponent.cs",
               "RelativeToolTip": "Scripts\\MoveComponent.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAcwCkAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-16T18:43:23.83Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 13,
               "Title": "HealthComponent.cs",
               "DocumentMoniker": "C:\\ProgrammingBase\\practice-3\\Scripts\\HealthComponent.cs",
               "RelativeDocumentMoniker": "Scripts\\HealthComponent.cs",
               "ToolTip": "C:\\ProgrammingBase\\practice-3\\Scripts\\HealthComponent.cs",
               "RelativeToolTip": "Scripts\\HealthComponent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-16T18:40:13.421Z",
               "EditorCaption": ""

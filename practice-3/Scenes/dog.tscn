@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://dyqh6jhnqhc6l"]
+
+[ext_resource type="Script" uid="uid://bv23r45kxvcyh" path="res://Scripts/MoveComponent.cs" id="1_nvlu8"]
+[ext_resource type="Script" uid="uid://dhuealjerypq6" path="res://Scripts/VisibilityComponent.cs" id="1_y1yv2"]
+[ext_resource type="Script" uid="uid://cbnbka406826i" path="res://Scripts/DamagingObject.cs" id="2_uny1q"]
+[ext_resource type="Script" uid="uid://u3p6a0nbrbw8" path="res://Scripts/EnemyHealth.cs" id="4_bno1h"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_bno1h"]
+radius = 8.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rk2ao"]
+albedo_color = Color(0.33103347, 0, 0.04245331, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_3npvw"]
+material = SubResource("StandardMaterial3D_rk2ao")
+top_radius = 0.075
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1vivr"]
+size = Vector3(1, 2, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8vrlf"]
+size = Vector3(1, 2, 1)
+
+[node name="CharacterBody3D" type="CharacterBody3D" unique_id=1011131451 groups=["Enemy"]]
+collision_layer = 2
+
+[node name="VisibilityComponent" type="Area3D" parent="." unique_id=1940906559 node_paths=PackedStringArray("moveComponent")]
+script = ExtResource("1_y1yv2")
+moveComponent = NodePath("../MoveComponent")
+metadata/_custom_type_script = "uid://dhuealjerypq6"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VisibilityComponent" unique_id=1911301287]
+shape = SubResource("CylinderShape3D_bno1h")
+
+[node name="MoveComponent" type="Node" parent="." unique_id=1783480515]
+script = ExtResource("1_nvlu8")
+speed = 7.0
+metadata/_custom_type_script = "uid://bv23r45kxvcyh"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1104957]
+transform = Transform3D(1, 0, 0, 0, 0.7, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("CylinderMesh_3npvw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=788786627]
+transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_1vivr")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1289479194]
+script = ExtResource("2_uny1q")
+isDisposable = false
+TargetGroups = PackedStringArray("Tower")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1255933847]
+transform = Transform3D(1.1, 0, 0, 0, 1, 0, 0, 0, 1.1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_8vrlf")
+
+[node name="HealthComponent" type="Node" parent="." unique_id=1409725686]
+script = ExtResource("4_bno1h")
+metallCount = 3
+maxHealth = 20.0
+metadata/_custom_type_script = "uid://bv7hwbgcxhu73"

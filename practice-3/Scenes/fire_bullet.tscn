@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://b1tdkx8ehfqap"]
+
+[ext_resource type="Script" uid="uid://bah0p67kep600" path="res://Scripts/Bullet.cs" id="1_03phv"]
+[ext_resource type="Script" uid="uid://btf6w85eqyi7d" path="res://Scripts/DoTComponent.cs" id="1_p2nfp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_03phv"]
+albedo_color = Color(1, 1, 0, 1)
+emission_enabled = true
+emission = Color(0.99817723, 0, 0.10988588, 1)
+emission_energy_multiplier = 13.7
+
+[sub_resource type="SphereMesh" id="SphereMesh_u0446"]
+material = SubResource("StandardMaterial3D_03phv")
+radius = 0.78
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_03phv"]
+radius = 0.37891364
+
+[node name="FireBullet" type="Area3D" unique_id=687263865]
+script = ExtResource("1_03phv")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=125219194]
+transform = Transform3D(0.51902205, 0, 0, 0, 0.51902205, 0, 0, 0, 0.51902205, 0, 0, 0)
+mesh = SubResource("SphereMesh_u0446")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=447745703]
+collision_mask = 3
+script = ExtResource("1_p2nfp")
+tickDelay = 0.5
+fireColor = Color(1, 0, 0, 0)
+damage = 3.0
+TargetGroups = PackedStringArray("Enemy")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=470630816]
+shape = SubResource("SphereShape3D_03phv")

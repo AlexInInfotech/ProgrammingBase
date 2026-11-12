@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://bfdarykyg7s6i"]
+
+[ext_resource type="Script" uid="uid://buymeohhuj1co" path="res://Scripts/FreezeComponent.cs" id="1_1keq7"]
+[ext_resource type="Script" uid="uid://bah0p67kep600" path="res://Scripts/Bullet.cs" id="1_icboj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1vivr"]
+albedo_color = Color(0.25490198, 1, 1, 1)
+emission_enabled = true
+emission = Color(0, 0, 1, 1)
+emission_energy_multiplier = 13.3
+
+[sub_resource type="SphereMesh" id="SphereMesh_hrbkw"]
+material = SubResource("StandardMaterial3D_1vivr")
+radius = 0.78
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_icboj"]
+radius = 0.37891364
+
+[node name="freeze_bullet" type="Area3D" unique_id=853404996]
+collision_mask = 3
+script = ExtResource("1_icboj")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2131359157]
+transform = Transform3D(0.51902205, 0, 0, 0, 0.51902205, 0, 0, 0, 0.51902205, 0, 0, 0)
+mesh = SubResource("SphereMesh_hrbkw")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=924339359]
+collision_mask = 3
+script = ExtResource("1_1keq7")
+freezeColor = Color(0.2331478, 0.45712483, 1, 0)
+damage = 1.0
+TargetGroups = PackedStringArray("Enemy")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1479654174]
+shape = SubResource("SphereShape3D_icboj")

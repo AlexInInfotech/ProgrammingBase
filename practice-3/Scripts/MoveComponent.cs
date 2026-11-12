@@ -8,7 +8,7 @@ public partial class MoveComponent : Node
 
     protected Node3D target;
 
-    [Export] protected float speed = 10f;
+    [Export] public float speed = 10f;
 
     [Export] protected float stopRadius = 0.5f;
 

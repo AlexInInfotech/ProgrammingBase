@@ -24,7 +24,7 @@ public partial class HealthComponent : Node
         
     }
 
-    private void Die()
+    protected virtual void Die()
     {
         parentNode.QueueFree();
     }

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://osfbs11awpbu"]
+
+[ext_resource type="Script" uid="uid://dqm5dg1s8g2ky" path="res://Scripts/CoreHealth.cs" id="2_58tws"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8vrlf"]
+emission_enabled = true
+emission = Color(0.689007, 0.0016774529, 0.8545852, 1)
+emission_energy_multiplier = 13.65
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_1vivr"]
+material = SubResource("StandardMaterial3D_8vrlf")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1vivr"]
+
+[node name="Core" type="StaticBody3D" unique_id=732884975]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=409970629]
+mesh = SubResource("CapsuleMesh_1vivr")
+
+[node name="HealthComponent" type="Node" parent="." unique_id=260913790]
+script = ExtResource("2_58tws")
+maxHealth = 100000000.0
+metadata/_custom_type_script = "uid://bv7hwbgcxhu73"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1286342976]
+shape = SubResource("CapsuleShape3D_1vivr")

@@ -14,11 +14,11 @@ top_radius = 0.3
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_1f0kj"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8vrlf"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ou3m2"]
 albedo_color = Color(0.34117648, 0.13725491, 1, 1)
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_mh5eo"]
-material = SubResource("StandardMaterial3D_8vrlf")
+material = SubResource("StandardMaterial3D_ou3m2")
 top_radius = 1.105
 height = 0.74658203
 
@@ -42,7 +42,7 @@ metadata/_custom_type_script = "uid://bv7hwbgcxhu73"
 script = ExtResource("2_mh5eo")
 bulletScene = ExtResource("3_tghyl")
 bulletSpeed = 10.0
-fireRate = 1.7
+shootDelay = 0.5
 metadata/_custom_type_script = "uid://ck70m7wks18a0"
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="ShootComponent" unique_id=1286770831]

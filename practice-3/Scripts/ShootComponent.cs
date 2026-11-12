@@ -7,8 +7,8 @@ public partial class ShootComponent : Node3D
     
     [Export] private PackedScene bulletScene;
     [Export] private float bulletSpeed = 100f;
-    [Export] private float bulletDamage = 10f;
-    [Export] private float fireRate = 2f;
+    //[Export] private float bulletDamage = 10f;
+    [Export] protected float shootDelay = 2f;
 
     private Node3D target;
 
@@ -16,7 +16,7 @@ public partial class ShootComponent : Node3D
 
     public override void _Ready()
     {
-        shootTimer.WaitTime = 1.0f / fireRate; //создаем таймер
+        shootTimer.WaitTime = shootDelay; //создаем таймер
         shootTimer.OneShot = false;
         AddChild(shootTimer);
         shootTimer.Timeout += () => TryShoot();
@@ -40,7 +40,7 @@ public partial class ShootComponent : Node3D
         }
     }
 
-    private void TryShoot()
+    protected void TryShoot()
     {
         if (bulletScene != null)
             SpawnBullet();
@@ -55,7 +55,7 @@ public partial class ShootComponent : Node3D
         bullet.GlobalPosition = GlobalPosition;
         bullet.Rotation = GlobalRotation;
         bullet.SetSpeed(bulletSpeed);
-        bullet.SetDamage(bulletDamage);
+        //bullet.SetDamage(bulletDamage);
     }
 
     private void TurnOnCannon()

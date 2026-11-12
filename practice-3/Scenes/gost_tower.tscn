@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cmrwba1jfkoks"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t8da4"]
+transparency = 1
+albedo_color = Color(0.023529412, 1, 0.16078432, 0.45490196)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ln2bg"]
+material = SubResource("StandardMaterial3D_t8da4")
+top_radius = 0.075
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j5wy2"]
+transparency = 1
+albedo_color = Color(0, 1, 1, 0.40392157)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_t8da4"]
+material = SubResource("StandardMaterial3D_j5wy2")
+top_radius = 1.105
+height = 0.74658203
+
+[node name="CharacterBody3D" type="CharacterBody3D" unique_id=1272039313]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1977350701]
+mesh = SubResource("CylinderMesh_ln2bg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=137702989]
+transform = Transform3D(-0.023784906, 1.0485506, 0.018866258, 0, 0.077718526, -0.25622773, -0.2918189, -0.08546286, -0.0015377058, 0, 0.73006034, 0.041914366)
+mesh = SubResource("CylinderMesh_t8da4")
