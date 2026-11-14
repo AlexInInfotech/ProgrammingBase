@@ -1,0 +1,87 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dcsq5meq6fplu"
+path="res://.godot/imported/apartment__baked.glb-b600fcc0c1badc913c0685cc400dc9e9.scn"
+
+[deps]
+
+source_file="res://resources/apartment_baked/apartment__baked.glb"
+dest_files=["res://.godot/imported/apartment__baked.glb-b600fcc0c1badc913c0685cc400dc9e9.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+mesh_library/use_node_names_as_mesh_names=false
+array_mesh/deduplicate_surfaces=true
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"nodes": {
+"PATH:Sketchfab_model/63a13ab17eef42f89a1d13a1a318585b_fbx/RootNode/Baseboard/Baseboard_Baseboard_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/63a13ab17eef42f89a1d13a1a318585b_fbx/RootNode/Ceiling/Ceiling_Ceiling_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/63a13ab17eef42f89a1d13a1a318585b_fbx/RootNode/Counter/Counter_CounterMetal_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/63a13ab17eef42f89a1d13a1a318585b_fbx/RootNode/Counter/Counter_Counter_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/63a13ab17eef42f89a1d13a1a318585b_fbx/RootNode/Door": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/63a13ab17eef42f89a1d13a1a318585b_fbx/RootNode/Floor/Floor_Floor_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/63a13ab17eef42f89a1d13a1a318585b_fbx/RootNode/Plywood/Plywood_Plywood_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/63a13ab17eef42f89a1d13a1a318585b_fbx/RootNode/Wall1/Wall1_Wall1_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/63a13ab17eef42f89a1d13a1a318585b_fbx/RootNode/Wall2/Wall2_Wall2_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/63a13ab17eef42f89a1d13a1a318585b_fbx/RootNode/Wall3/Wall3_Wall3_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/63a13ab17eef42f89a1d13a1a318585b_fbx/RootNode/Window Glass/Window Glass_Glass_material_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/63a13ab17eef42f89a1d13a1a318585b_fbx/RootNode/Window/Window_WindowFrame_0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/63a13ab17eef42f89a1d13a1a318585b_fbx/RootNode/Window/Window_WindowPlastic_0": {
+"generate/physics": true
+}
+}
+}
+gltf/naming_version=2
+gltf/embedded_image_handling=1
+gltf/texture_map_mode=1

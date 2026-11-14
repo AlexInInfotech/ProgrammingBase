@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://xm3tde032do5"]
+
+[ext_resource type="Script" uid="uid://dyq12aj7s6o1h" path="res://scripts/Player.cs" id="1_4flbx"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_1vivr"]
+radius = 0.037597656
+height = 1.3516235
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1vivr"]
+radius = 0.19580078
+height = 1.3400879
+
+[node name="CharacterBody3D" type="CharacterBody3D" unique_id=4254125]
+script = ExtResource("1_4flbx")
+metadata/_custom_type_script = "uid://dyq12aj7s6o1h"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=975216192]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0013514757, 0.68663156, 0.03594348)
+mesh = SubResource("CapsuleMesh_1vivr")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=548492905]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.387379, -0.09387257)
+current = true
+
+[node name="RayCast3D" type="RayCast3D" parent="Camera3D" unique_id=899960711]
+target_position = Vector3(0, 0, -2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1406039146]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6844686, 0)
+shape = SubResource("CapsuleShape3D_1vivr")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1532591135]
+
+[node name="LabelNotes" type="Label" parent="CanvasLayer" unique_id=69523275]
+offset_right = 80.0
+offset_bottom = 34.0
+theme_override_font_sizes/font_size = 24
+text = "Notes:"
+
+[node name="LabelItemsNumber" type="Label" parent="CanvasLayer" unique_id=1946616553]
+offset_left = 80.0
+offset_right = 192.0
+offset_bottom = 34.0
+theme_override_font_sizes/font_size = 24
+text = "0"
+
+[node name="CameraLabel" type="Label" parent="CanvasLayer" unique_id=566210834]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.49400002
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -459.0
+offset_top = -56.112
+offset_right = 459.0
+offset_bottom = -26.0
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+vertical_alignment = 1

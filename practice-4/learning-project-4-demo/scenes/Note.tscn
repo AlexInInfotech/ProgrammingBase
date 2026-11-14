@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://3py41yo5r2kj"]
+
+[ext_resource type="PackedScene" uid="uid://dwm6ryffsljb8" path="res://resources/note/Note.glb" id="1_ku001"]
+[ext_resource type="Script" uid="uid://bu3ktyx223ivv" path="res://scripts/Note.cs" id="1_tqwf5"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_t7and"]
+
+[node name="Note" type="StaticBody3D" unique_id=378822659 node_paths=PackedStringArray("layer")]
+script = ExtResource("1_tqwf5")
+text = "УНИЧТОЖИТЬЯЩИКИ,,,,,,,,,,,,,"
+layer = NodePath("CanvasLayer")
+metadata/_custom_type_script = "uid://bu3ktyx223ivv"
+
+[node name="Sketchfab_Scene" parent="." unique_id=771028941 instance=ExtResource("1_ku001")]
+transform = Transform3D(0.24482816, 0, 0, 0, 0.08271459, 0, 0, 0, 0.11762836, -0.099429846, -1.1920929e-07, -0.0034589767)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2109409135]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.039474487, 0.006795883, 0.0059604645)
+shape = SubResource("SphereShape3D_t7and")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=926749951]
+visible = false
+
+[node name="TextureRect" type="ColorRect" parent="CanvasLayer" unique_id=645698403]
+anchors_preset = -1
+anchor_left = 0.503
+anchor_top = 0.50200003
+anchor_right = 0.503
+anchor_bottom = 0.50200003
+offset_left = -579.45605
+offset_top = -325.29602
+offset_right = 578.54395
+offset_bottom = 325.70398
+color = Color(0.078431375, 0.078431375, 0.078431375, 0.5137255)
+
+[node name="TextureRect2" type="ColorRect" parent="CanvasLayer" unique_id=1802718903]
+anchors_preset = -1
+anchor_left = 0.503
+anchor_top = 0.50200003
+anchor_right = 0.503
+anchor_bottom = 0.50200003
+offset_left = -244.45605
+offset_top = -229.29602
+offset_right = 220.54395
+offset_bottom = 325.70398
+color = Color(0.9095084, 0.79599804, 0.36556494, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer" unique_id=170538014]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -206.0
+offset_top = -196.0
+offset_right = 176.0
+offset_bottom = 288.0
+theme_override_font_sizes/normal_font_size = 32
+text = "sfdsfsdfsdfsdf"
+fit_content = true

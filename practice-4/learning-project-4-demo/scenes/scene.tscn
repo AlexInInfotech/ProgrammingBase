@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://cwieblvhhgyc3"]
+
+[ext_resource type="PackedScene" uid="uid://xm3tde032do5" path="res://scenes/player.tscn" id="1_1kc1q"]
+[ext_resource type="PackedScene" uid="uid://dcsq5meq6fplu" path="res://resources/apartment_baked/apartment__baked.glb" id="1_ulcgi"]
+[ext_resource type="PackedScene" uid="uid://bk2ogo5xb7kla" path="res://scenes/Door.tscn" id="3_4msxo"]
+[ext_resource type="PackedScene" uid="uid://j6rjbh68rupx" path="res://scenes/Furniture.tscn" id="4_5fb3c"]
+[ext_resource type="PackedScene" uid="uid://3py41yo5r2kj" path="res://scenes/Note.tscn" id="5_gjmho"]
+
+[node name="Node3D" type="Node3D" unique_id=743209400]
+
+[node name="CharacterBody3D" parent="." unique_id=4254125 instance=ExtResource("1_1kc1q")]
+MouseSensitivity = 0.006
+
+[node name="Apartment" type="Node3D" parent="." unique_id=231299832]
+
+[node name="Sketchfab_Scene" parent="Apartment" unique_id=1365537174 instance=ExtResource("1_ulcgi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.708, 0, -1.626)
+
+[node name="Sketchfab_Scene2" parent="Apartment" unique_id=991430406 instance=ExtResource("1_ulcgi")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 7.196, 0, 8.515)
+
+[node name="Door" parent="Apartment" unique_id=1234180736 instance=ExtResource("3_4msxo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.467635, -0.1448721, 3.439405)
+
+[node name="Door2" parent="Apartment" unique_id=1925159137 instance=ExtResource("3_4msxo")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.620546, -0.13929346, 5.0956354)
+
+[node name="Door3" parent="Apartment" unique_id=1035501430 instance=ExtResource("3_4msxo")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1.0202302, 0, 1, 0, -4.371139e-08, 5.299616, -0.08362535, 1.8285012)
+
+[node name="Furniture" parent="Apartment" unique_id=1017168259 instance=ExtResource("4_5fb3c")]
+transform = Transform3D(-0.00012227893, 0, -0.40358645, 0, 0.40358648, 0, 0.40358645, 0, -0.00012227893, 1.7340853, 0.010460228, 1.3210508)
+
+[node name="Furniture2" parent="Apartment" unique_id=1337415331 instance=ExtResource("4_5fb3c")]
+transform = Transform3D(-0.00012227893, 0, -0.40358645, 0, 0.40358648, 0, 0.40358645, 0, -0.00012227893, 1.7340853, 0.010460228, 2.5785155)
+
+[node name="Furniture3" parent="Apartment" unique_id=2125875114 instance=ExtResource("4_5fb3c")]
+transform = Transform3D(-0.40358496, 0, -0.0010970338, 0, 0.40358648, 0, 0.0010970338, 0, -0.40358496, 0.17324328, 0.010460228, 3.0857975)
+
+[node name="Furniture4" parent="Apartment" unique_id=1551575922 instance=ExtResource("4_5fb3c")]
+transform = Transform3D(-0.40358496, 0, -0.0010970338, 0, 0.40358648, 0, 0.0010970338, 0, -0.40358496, -1.1833333, 0.010460228, 3.0857975)
+
+[node name="Furniture5" parent="Apartment" unique_id=652897848 instance=ExtResource("4_5fb3c")]
+transform = Transform3D(-0.40358496, 0, -0.0010970338, 0, 0.40358648, 0, 0.0010970338, 0, -0.40358496, -2.6102166, 0.010460228, 3.0857975)
+
+[node name="Note" parent="Apartment" unique_id=326986680 instance=ExtResource("5_gjmho")]
+transform = Transform3D(-0.09086948, 0, 0.9958628, 0, 1, 0, -0.9958628, 0, -0.09086948, 0, 1.0990968, 3.0603876)

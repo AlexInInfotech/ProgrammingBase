@@ -1,0 +1,217 @@
+[gd_scene format=3 uid="uid://bk2ogo5xb7kla"]
+
+[ext_resource type="PackedScene" uid="uid://b8lf7n33mluh0" path="res://resources/door_with_frame/frame.glb" id="1_eyv6f"]
+[ext_resource type="Script" uid="uid://bs68say7l8mla" path="res://scripts/Door.cs" id="1_mg2as"]
+[ext_resource type="PackedScene" uid="uid://b56f3mixkluu2" path="res://resources/door_with_frame/door.glb" id="2_mg2as"]
+[ext_resource type="AudioStream" uid="uid://ba8oxuo1xyxq4" path="res://Sounds/250539__jhumbucker__door-pounding-increasing-intensity.wav" id="4_1ebfc"]
+[ext_resource type="AudioStream" uid="uid://fj6pn7gqjjwl" path="res://Sounds/66772__kevinkace__barrel-break-4.wav" id="5_ao1jx"]
+
+[sub_resource type="Resource" id="Resource_eyv6f"]
+metadata/__load_path__ = "res://resources/audio/66772__kevinkace__barrel-break-4.wav"
+
+[sub_resource type="Animation" id="Animation_ao1jx"]
+resource_name = "Destroy"
+length = 2.0
+tracks/0/type = "audio"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AudioStreamPlayer3D")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": SubResource("Resource_eyv6f")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("4_1ebfc")
+}],
+"times": PackedFloat32Array(0, 0.06666666)
+}
+tracks/0/use_blend = true
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("GPUParticles3D:emitting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("DoorHinge:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.16666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("DoorHinge")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1.9333333),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"queue_free"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_y7q0m"]
+resource_name = "Hit"
+tracks/0/type = "audio"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AudioStreamPlayer3D")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("4_1ebfc")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/0/use_blend = true
+
+[sub_resource type="Animation" id="Animation_4k7y2"]
+resource_name = "Open"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DoorHinge:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.46666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 1.5707964, 0)]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AudioStreamPlayer3D")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("5_ao1jx")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/1/use_blend = true
+
+[sub_resource type="Animation" id="Animation_kdo1k"]
+length = 0.46666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GPUParticles3D:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DoorHinge:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("DoorHinge:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v12wq"]
+_data = {
+&"Destroy": SubResource("Animation_ao1jx"),
+&"Hit": SubResource("Animation_y7q0m"),
+&"Open": SubResource("Animation_4k7y2"),
+&"RESET": SubResource("Animation_kdo1k")
+}
+
+[sub_resource type="Curve" id="Curve_4k7y2"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_m78fr"]
+curve = SubResource("Curve_4k7y2")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_hqttp"]
+angle_min = -644.0
+angle_max = 586.7
+use_rotation_3d = true
+rotation_3d_min = Vector3(-2, -7.365, -2.425)
+rotation_3d_max = Vector3(4.525, 17.07, 22.05)
+inherit_velocity_ratio = 0.166
+spread = 180.0
+initial_velocity_min = 2.0
+initial_velocity_max = 5.0
+gravity = Vector3(0, -7, 0)
+scale_curve = SubResource("CurveTexture_m78fr")
+
+[sub_resource type="BoxMesh" id="BoxMesh_vag8r"]
+size = Vector3(0.05, 0.05, 0.1)
+
+[node name="Door" type="Node3D" unique_id=372988619 node_paths=PackedStringArray("animation")]
+script = ExtResource("1_mg2as")
+health = 50.0
+animation = NodePath("AnimationPlayer")
+metadata/_custom_type_script = "uid://bs68say7l8mla"
+
+[node name="Frame" parent="." unique_id=937016875 instance=ExtResource("1_eyv6f")]
+transform = Transform3D(0.011515652, 0, 0, 0, 0.010197275, 0, 0, 0, 0.01, 0, 0, 0)
+
+[node name="DoorHinge" type="Node3D" parent="." unique_id=699825227]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.47381786, 0, 0)
+
+[node name="Door" parent="DoorHinge" unique_id=1661622986 instance=ExtResource("2_mg2as")]
+transform = Transform3D(0.011179425, 0, 0, 0, 0.010181547, 0, 0, 0, 0.01, 0.47381783, 0, -0.07096085)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1826550156]
+libraries/ = SubResource("AnimationLibrary_v12wq")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1820444936]
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=1666837758]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2548628, 0)
+emitting = false
+amount = 80
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_hqttp")
+draw_pass_1 = SubResource("BoxMesh_vag8r")
